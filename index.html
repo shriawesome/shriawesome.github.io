@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shri Portfolio Website</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" > <!--To normalise small different browsers-->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /><!--Good font options available under this link-->
+        
+        <!-- Update this with the used fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src='img/logo.jpeg' alt="">
+            </div>
+            <button class='nav-toggle' aria-label="toggle navigation">
+                <span class='hamburger'></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Service</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Shrikant Kendre</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Associate Data Scientist</p>
+            <img src="img/shri_intro.jpeg" alt="a picture of me smiling" class="intro__img">
+        </section>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__tite section__title--services">My Projects</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Improve the Ad Click Prediction Accuracy for Search Engine</h3>
+                    <p>
+                        Reseached on Various NLP algorithms for information. Implemented and Evaluated
+                        CDSSM(Convolutional Deep Structural Semantic Matching) over AUC, Log-loss reduction,
+                        Calibration plots. Worked on model deployment using Tensorflow serving with protocol buffers and gRPC.
+                    </p>
+                </div> <!-- service -->
+                <div class="service">
+                    <h3>Medicare Analytics using Health Outcome Surveys and Clinic Dataset</h3>
+                    <p>
+                        Developed analytical and ML model that assist Customers Marketing team
+                        by targeting right and influential population to improve the star rating
+                        of medicare plans by addressing specific measures. Used HOS data, clinical data, prescription
+                        data to train ensemble of models to calculate propensity for the members to have Urinary Incontinence.
+                        
+                    </p>
+                </div> <!-- service -->
+                <div class="service">
+                    <h3>Automatic Detection of Hateful text in Online content using Twitter</h3>
+                    <p> 
+                        Built an intermediate module between user and twitter platform that monitor tweets made by the people.
+                        In the case of hateful/offensive content, it prevents the user from tweeting, hence maintaining and monitoring
+                        decency of the Platform. While doing the task also wrote a research paper for the same and is availabe <a class="link" href='https://arxiv.org/abs/1809.08651'>here</a>.
+                    
+                    </p>
+                </div> <!-- service -->
+            </div>
+            <a href="#work" class="btn">See my Work</a> 
+        </section>
+
+        <!-- About me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">
+                ML/DL Practitioner based out of Bangalore, India
+            </p>
+
+            <div class="about-me__body">
+                <p>
+                    ML/ DL practitioner with exposure to full-satck development, have strong knowledge of various ML/DL algorithms and statistical
+                tools. Interested in applied Machine Learning to solve real world problems related to Computer Vision and NLP.
+                </p>
+                <p>
+                    Along with my professinal interest in ML/DL I also find myself enjoying different sports encompassing Badminton, Swimming, Football,
+                    Cricket etc. I also like helping others and zealously take part in different social-help activities via "OUTREACH" programs.
+                </p>
+            </div>
+            <img src="img/shri_1.png" alt="Shri's image again" class="about-me__img">
+        </section>
+
+        <!-- My Work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Work</h2>
+            <p class="section__subtitle section__subtitle--work" ></p>
+
+            <div class="portfolio">
+                <!-- Portfolio -->
+                <a href="https://github.com/shriawesome/MachineLearning/tree/master/FeatureSelection" target='_blank' class="portfolio__item">
+                   <p> <h3>Santander Customer Satisfaction(Kaggle)</h3>
+                        Identified dissatisfied customers in the early phase and by doing so would allow Santander to take proactive steps to improve a customer's
+                         happiness before churning. Performed various feature selection methods including <i>Filter Methods, Wrapper Methods and Embedded Methods.</i>
+                         Model is developed using Random Forest/ Logistic Regression and evaluated on Accuracy(Train: 80%, Test: 81%) and Confusion matrix.
+                   </p>
+                 </a>
+
+                <a href="https://hub.docker.com/r/shriawesome/cifar_classification" target='_blank'class="portfolio__item">
+                    <p> <h3>Image Classifier using Deep Learning</h3>
+                        Worked on Deep CNN Model to build a classifier to identify the images(belonging to specific class), trained on CIFAR dataset. Built a Flask app to 
+                        consume the model and deployed the app using docker container. Evaluated the performance based on user uploaded images and their feedback.
+                   </p>
+                </a>
+
+                <a href="https://github.com/shriawesome/Toxic-Language-Detection-in-Online-Content" target='_blank' class="portfolio__item">
+                    <p> <h3>Automatic Detection of Hateful text in Online Content using Twitter API</h3>
+                        Built an intermediate module between user and twitter platform that monitor tweets made by the people.
+                        In the case of hateful/offensive content, it prevents the user from tweeting, hence maintaining and monitoring
+                        decency of the Platform.
+                    </p>
+                </a>
+
+                <a href="https://github.com/shriawesome/Getting-started-with-Tensorflow/blob/master/BinaryClassification_SpineDataset.ipynb" target='_blank' class="portfolio__item">
+                    <p> <h3>Given Lower Back Pain Symptoms, Categorize Abnormal/ Normal</h3>
+                        Built a Binary Classifier using DNN to predict given a list of symptoms whether a person suffers from back pain or not. The data comprised of nearly 13
+                        attributes and 310 observations, the DNN is optimised using RMSprop and evaluated on BinaryCrossEntropy, the metrices taken under consideration were Precision
+                        and Recall.
+                    </p>
+                </a>
+
+
+                <a href="https://github.com/shriawesome/Getting-started-with-Tensorflow/blob/master/Autoencoders.ipynb" target='_blank' class="portfolio__item">
+                    <p> <h3>Regenerate Alphabets after Performing Dimensionaliy Reduction via AutoEncoders </h3>
+                        Performed Dimensionality reduction to reduce the dimensions in the given input data and then regenerate the input data using this newer dimensional Dataset.
+                        The dataset consisted of 26 folders(A-Z) containing handwritten images in size 28x28 pixels, and each image is a gray-scale image. Autoencoders were implemented in 2 ways
+                        first via Dense NN and later via CNN(Encoding and Decoding), and was  evaluated based on how perfeclty the input data is reconstructed.
+                    </p>
+                </a>
+
+
+                <a href="https://github.com/shriawesome/MachineLearning/blob/master/MLSpecialisation/Course%201/week_4/Document%20Retrieval.ipynb" target='_blank' class="portfolio__item">
+                    <p> <h3>Similar Document Retrieval via Wikipedia Dataset</h3>
+                        Built a model that could return similar documents to the given document based on the input text as the features, dataset consisted of 3 columns namely URI, NAME and TEXT with 
+                        nearly 50,000 observatoins. The KNeighborsClassifier  algorithm is used to identify the similar document and the model predicts the name of the people closely related to the input 
+                        document.
+                    </p>
+                </a>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <a href="mailto:siddd.shriii@gmail.com" class="footer__link">siddd.shriii@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link"
+                    href="https://github.com/shriawesome" target='_blank'><i class='fab fa-github'></i>
+                </a>
+                </li>
+                <li class="social-list__item"><a class="social-list__link"
+                    href="https://www.linkedin.com/in/shrikant-kendre-2941a6143/" target="_blank">
+                    <i class='fab fa-linkedin'></i>
+                </a>
+                    
+                </li>
+                <li class="social-list__item"><a class="social-list__link"
+                    href="https://hub.docker.com/u/shriawesome" target="_blank">
+                    <i class='fab fa-docker'></i>
+                </a>
+                    
+                </li>       
+            </ul>
+        </footer>
+
+        <script src='js/index.js'></script> 
+
+    </body>
+</html>
