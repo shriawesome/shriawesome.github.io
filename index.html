@@ -39,14 +39,22 @@
             <h1 class="section__title section__title--intro">
                 Hi, I am <strong>Shrikant Kendre</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Associate Data Scientist</p>
-            <img src="img/shri_intro.jpeg" alt="a picture of me smiling" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">MSCS at University of San Francisco</p>
+            <img src="img/shri_intro.jpg" alt="a picture of me smiling" class="intro__img">
         </section>
 
         <!-- My services -->
         <section class="my-services" id="services">
             <h2 class="section__tite section__title--services">My Projects</h2>
             <div class="services">
+                <div class="service">
+                    <h3>Build a OCR model and multi-lingual custom NER model using CNN/ RNN with LSTM units</h3>
+                    <p>
+                        Researched on Techiques to improve previously used OCR in PhlexEview and performing custom NER Tagging across different languages. 
+                        Developed a custom OCR model using CNN and Bi-Directional RNNs with LSTM units and calibrated against Connectionist Temporal Classification(CTC) loss.
+                        Deployed model using Azure Container Registry on Azure.
+                    </p>
+                </div>
                 <div class="service">
                     <h3>Improve the Ad Click Prediction Accuracy for Search Engine</h3>
                     <p>
@@ -82,18 +90,18 @@
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who I am</h2>
             <p class="section__subtitle section__subtitle--about">
-                ML/DL Practitioner based out of Bangalore, India
+                Pursuing Master's in Computer Science at USF
             </p>
 
             <div class="about-me__body">
                 <p>
-                    ML/ DL practitioner with exposure to full-satck development, have strong knowledge of various ML/DL algorithms and statistical
+                    ML/ DL practitioner with exposure to full-satck development along with industry experience of 3 years, have strong knowledge of various ML/DL algorithms and statistical
                 tools. Interested in applied Machine Learning to solve real world problems related to Computer Vision and NLP.
                 </p>
                 <p>
-                    Along with my professinal interest in ML/DL I also find myself enjoying different sports encompassing Badminton, Swimming, Football,
-                    Cricket etc. I also like helping others and zealously take part in different social-help activities via "OUTREACH" programs.
-                </p>
+                    Along with my professinal interest in ML/DL I also find myself enhancing my software development skills by working on various personal projects. One of my recent porject encompasses
+                    developing a Ticket purchasing web applicatoin like EventBrite, that uses 2-tier model with front-end designed using Java(Jetty/ Servlets) and SQL(Azure database for MySql) as the backed and
+                    hosted the web app using App Services from Azure.
             </div>
             <img src="img/shri_1.png" alt="Shri's image again" class="about-me__img">
         </section>
@@ -105,6 +113,18 @@
 
             <div class="portfolio">
                 <!-- Portfolio -->
+                <a href="https://shriawesome.github.io" target='_blank' class="portfolio__item">
+                    <p> <h3>Ticket Purchasing web app for Hosting/ Purchasing tickets to Events</h3>
+                        Built a ticket purchasing web app like EventBrite. Designed a 2 tier- web application with Java(Jetty/ Servlets) along with HTML and CSS with JS as the front-end and SQL(Azure database for SQL) as the backend
+                        and hosted the application using App Services on Azure.
+                    </p>
+                  </a>
+                <a href="https://github.com/CS601-F21/side-project-shriawesome/" target='_blank' class="portfolio__item">
+                    <p> <h3>Handwritten Text Recognition using TensorFlow</h3>
+                        Performed OCR on handwritten text with an accuracy of 80% on handwritten english text. Built a model using tensorflow(keras) trained on IAM dataset
+                        and evaluated against custom Connectionist Temporal Classification(CTC) loss, deployed solution as a web application using CherryPy.
+                    </p>
+                  </a>
                 <a href="https://github.com/shriawesome/MachineLearning/tree/master/FeatureSelection" target='_blank' class="portfolio__item">
                    <p> <h3>Santander Customer Satisfaction(Kaggle)</h3>
                         Identified dissatisfied customers in the early phase and by doing so would allow Santander to take proactive steps to improve a customer's
@@ -178,7 +198,7 @@
                     
                 </li>    
                 <li class="social-list__item"><a class="social-list__link"
-                    href="files/ShriResume.pdf" target="_blank">
+                    href="files/Shrikant_resume.pdf" target="_blank">
                     <i class='fas fa-file'>resume</i>
                 </a>
                     
